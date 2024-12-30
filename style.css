@@ -1,0 +1,361 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container1 will contain the navbar */
+.container1 {
+    width: 100%;
+    max-width: 1525px; /* Max width for better responsiveness */
+    margin: 0 auto;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #53b4ed; /* Dark background for the navbar */
+    padding: 15px 20px; /* Vertical and horizontal padding */
+    height: 60px; /* Standard height for the navbar */
+    display: flex;
+    justify-content: space-between; /* Space between the logo and links */
+    align-items: center; /* Vertically center the content */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align the list items to the right */
+    align-items: right; /* Vertically center the list items */
+    list-style-type: none; /* Remove bullet points from list items */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between the list items */
+    justify-content: right;
+    align-items: right;
+}
+
+/* Align the h3 to the left inside the navbar */
+nav ul li h3 {
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(18, 3, 3);
+    margin-right: 50px; /* Push the logo to the left */
+    padding-left: 50px;
+    padding-right: 280px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: rgb(19, 8, 8);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    justify-content: right;
+    align-items: right;
+}
+
+nav ul li a:hover {
+    color: #15100c; /* Color change on hover */
+}
+
+/* .container will have the background image */
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 1px auto;
+    background-image: url('assets/prasad_long.jpg'); /* Ensure the path is correct */
+    background-color: #4a9bf3;
+    background-size: 80%; /* Ensure the image covers the entire area */
+    background-position: right 20%; /* Move the background slightly to the right */
+    min-height: 100vh; /* Ensure the container takes up full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: left; /* Align the content to the left */
+    text-align: left; /* Align text to the left */
+    color: rgb(32, 10, 80); /* Make the text white to contrast with the background */
+    padding: 80px; /* Add padding to prevent text from touching the edges */
+    position: relative;
+    padding-left: 120px;
+    padding-bottom: 500px;
+
+}
+
+/* Optional: Add a dark overlay to make text stand out against the background */
+
+
+
+/* Heading (h1) inside .container */
+.container h1 {
+    font-size: 70px; /* Adjust size for readability */
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding: 5px;
+    z-index: 2; /* Make sure the text appears above the overlay */
+}
+
+/* Paragraph styles inside .container */
+.container p {
+    font-size: 22px; /* Adjust for readability */
+    margin: 1px 0;
+    padding: 5px;
+    z-index: 2; /* Ensure the text appears above the overlay */
+}
+/* .container will have the background image */
+.container3 {
+    width: 100%;
+    max-width: 1500px;
+    margin: 1px auto;
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+    min-height: 80vh; /* Ensure the container takes up full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: left; /* Align the content to the left */
+    text-align: left; /* Align text to the left */
+    text-decoration: bold;
+    color: rgb(9, 1, 1); /* Make the text white to contrast with the background */
+    padding: 100px; /* Add padding to prevent text from touching the edges */
+    position: relative;
+    padding-left: 120px;
+}
+
+/* Optional: Add a dark overlay to make text stand out against the background */
+
+/* Navbar for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+        height: auto; /* Allow the navbar height to adjust in smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the navbar links vertically on small screens */
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between vertically stacked links */
+    }
+
+    nav ul li h3 {
+        margin-right: 0; /* Reset margin for logo */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+}
+
+/* Navbar links hover */
+nav ul li a:hover {
+    color: #f8c291; /* Add a hover effect */
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.skill-category {
+    flex: 1;
+}
+
+.skill-category h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: solid;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 8px;
+    width: 0;
+    transition: width 0.5s;
+}
+
+/* Project Section */
+.container4 {
+    width: 100%;
+    max-width: 1500px;
+    margin: 1px auto;
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+    min-height: 80vh; /* Ensure the container takes up full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: left; /* Align the content to the left */
+    text-align: left; /* Align text to the left */
+    color: rgb(8, 4, 4); /* Make the text white to contrast with the background */
+    padding: 100px; /* Add padding to prevent text from touching the edges */
+    position: relative;
+    padding-left: 120px;
+}
+.project-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* Experience  */
+.project-cards1 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card1 {
+    background-color: #efe2e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+.card1 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Education Section */
+#education ul li {
+    margin-bottom: 20px;
+}
+
+#education ul li h3 {
+    font-size: 22px;
+}
+
+#education ul li p {
+    font-size: 18px;
+    color: #777;
+}
+/*achieve */
+.achieve{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.hobbycard{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.hobbycard li {
+    border : 5px salmon;
+    border-radius: 50px;
+    padding : 20px;
+    margin : 20px;
+
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px;
+    background-color: #f8c291;
+    color: #100202;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Links */
+.footer1{
+    width: 100%;
+    max-width: 1500px;
+    margin: 1px auto;
+    background-color: #4a9bf3;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.footer-links{
+    align-items: center;
+    justify-content: center;
+    padding-left: 650px;
+}
+.footer-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.footer1 p{
+    padding-top : 10px;
+    padding-left: 650px;
+}
+
+.footer-links a:hover {
+    color: #f8c291;
+}
+
