@@ -67,7 +67,7 @@ nav ul li a:hover {
     width: 100%;
     max-width: 1500px;
     margin: 1px auto;
-    background-image: url('assets/prasad_long.jpg'); /* Ensure the path is correct */
+    background-image: url('prasad_long.jpg'); /* Ensure the path is correct */
     background-color: #4a9bf3;
     background-size: 80%; /* Ensure the image covers the entire area */
     background-position: right 20%; /* Move the background slightly to the right */
